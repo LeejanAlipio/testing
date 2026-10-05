@@ -1,5 +1,3 @@
-// Matchers
-
 // Not equal (.not)
 test("Not equal", () => {
   expect(3 * 33).not.toBe(69);
@@ -76,7 +74,6 @@ test("toMatch", () => {
 });
 
 // Array and Iterables
-
 test("toContain", () => {
   const names = ["Lee", "Mark"];
 
