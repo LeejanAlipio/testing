@@ -1,7 +1,7 @@
 import { capitalize } from "./capitalize"
 
 describe("Capitalize", () => {
-  test("Capitalize the firs character", () => {
+  test("Capitalize the first character", () => {
     expect(capitalize("hello world!")).toBe("Hello world!");
     expect(capitalize("leejan")).toBe("Leejan");
   })
