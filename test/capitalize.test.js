@@ -13,4 +13,8 @@ describe("Capitalize", () => {
     expect(capitalize(undefined)).toBe('');
     expect(capitalize(NaN)).toBe('');
   })
+
+  test('Return capitalized word without change', () => {
+    expect(capitalize('Hello')).toBe('Hello');
+  })
 })
