@@ -1,15 +1,12 @@
 import { capitalize } from "./capitalize"
 
-describe("String argument should return as capitalize", () => {
-  test("Return Hello world!", () => {
-    expect(capitalize("hello world!")).toBe("Hello world!")
-  })
-
-  test("Return Leejan", () => {
+describe("Capitalize", () => {
+  test("Capitalize the firs character", () => {
+    expect(capitalize("hello world!")).toBe("Hello world!");
     expect(capitalize("leejan")).toBe("Leejan");
   })
 
-  test('Return "" if inputs are false values', () => {
+  test('Return "" if inputs are falsy values', () => {
     expect(capitalize("")).toBe("");
     expect(capitalize(0)).toBe('');
     expect(capitalize(null)).toBe('');
