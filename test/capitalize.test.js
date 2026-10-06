@@ -20,5 +20,11 @@ describe("Capitalize", () => {
 
   test('Return "" or error if value is a number', () => {
     expect(capitalize(10)).toBe("");
+    expect(capitalize(4)).toBe("");
+  })
+
+  test('Preserve capital letters', () => {
+    expect(capitalize('hELLO')).toBe('HELLO');
+    expect(capitalize('hElLo')).toBe('HElLo');
   })
 })
