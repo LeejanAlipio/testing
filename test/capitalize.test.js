@@ -17,4 +17,8 @@ describe("Capitalize", () => {
   test('Return capitalized word without change', () => {
     expect(capitalize('Hello')).toBe('Hello');
   })
+
+  test('Return "" or error if value is a number', () => {
+    expect(capitalize(10)).toBe("");
+  })
 })
