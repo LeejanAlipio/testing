@@ -6,4 +6,8 @@ describe("Calculate two numbers", () => {
   test('Difference of two numbers', () => {
     expect(calculator.substract(-5, -5)).toEqual(0);
   })
+
+  test('Product of two numbers', () => {
+    expect(calculator.multiply(5, 10)).toEqual(50);
+  })
 })
