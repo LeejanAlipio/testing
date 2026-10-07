@@ -9,7 +9,7 @@ describe("Reverse a string", () => {
     expect(reverseString('   Hello')).toBe('olleH   ');
   })
 
-  test("Invalid arguments return empty string", () => {
+  test("Empty arguments return empty string", () => {
     expect(reverseString()).toBe('');
   })
 })
