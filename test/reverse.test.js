@@ -12,4 +12,19 @@ describe("Reverse a string", () => {
   test("Empty arguments return empty string", () => {
     expect(reverseString()).toBe('');
   })
+
+  test('Non-string arguments throw an error', () => {
+    const invalidArguments = [
+      123,
+      true,
+      { name: 'lee'},
+      ['apple', 'banana', 'orange'],
+      null,
+      undefined,
+    ]
+
+    invalidArguments.forEach((invalidInput) => {
+      expect(() => reverseString(invalidInput)).toThrow("Input must be a string!");
+    })
+  })
 })
