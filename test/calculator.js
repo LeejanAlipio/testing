@@ -3,5 +3,7 @@ export const calculator = {
     return a + b;
   },
 
-  
+  substract(a, b) {
+    return a - b;
+  }
 }
