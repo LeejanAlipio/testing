@@ -8,4 +8,8 @@ describe("Reverse a string", () => {
   test("Preserve white space", () => {
     expect(reverseString('   Hello')).toBe('olleH   ');
   })
+
+  test("Invalid arguments return empty string", () => {
+    expect(reverseString()).toBe('');
+  })
 })
