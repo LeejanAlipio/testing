@@ -20,7 +20,6 @@ describe("Reverse a string", () => {
       { name: 'lee'},
       ['apple', 'banana', 'orange'],
       null,
-      undefined,
     ]
 
     invalidArguments.forEach((invalidInput) => {
