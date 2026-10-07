@@ -10,4 +10,8 @@ describe("Calculate two numbers", () => {
   test('Product of two numbers', () => {
     expect(calculator.multiply(5, 10)).toEqual(50);
   })
+
+  test('Quotient of two numbers', () => {
+    expect(calculator.divide(10, 5)).toEqual(2);
+  })
 })
