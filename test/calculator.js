@@ -12,6 +12,10 @@ export const calculator = {
   },
 
   divide(a, b) {
+    if (b === 0) {
+      throw new Error("Cannot divide with 0");
+    }
+
     return a / b;
   }
 }
