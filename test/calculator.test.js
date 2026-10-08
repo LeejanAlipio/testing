@@ -17,7 +17,7 @@ describe("Calculate two numbers", () => {
     expect(calculator.divide(10, 5)).toEqual(2);
   })
 
-  test('10 / 0 equals to undefined or NaN', () => {
+  test('10 / 0 throws an error', () => {
     expect(() => calculator.divide(10, 0)).toThrow("Cannot divide with 0");
   })
 })
