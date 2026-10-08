@@ -10,4 +10,8 @@ describe("Analyze given array to average, min, max, and length", () => {
   test('min is equal to 5', () => {
     expect(analyzeArray(arr).min).toEqual(5);
   })
+
+  test('max is equal to 40', () => {
+    expect(analyzeArray(arr).max).toEqual(40);
+  })
 })
