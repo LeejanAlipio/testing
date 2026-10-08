@@ -20,6 +20,6 @@ describe("Analyze given array to average, min, max, and length", () => {
   })
 
   test('throw error if arr is empty', () => {
-    expect(analyzeArray([])).toThrow("Array must not be empty");
+    expect(() => analyzeArray([])).toThrow("Array must not be empty");
   })
 })
