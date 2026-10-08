@@ -20,4 +20,8 @@ describe("Calculate two numbers", () => {
   test('10 / 0 throws an error', () => {
     expect(() => calculator.divide(10, 0)).toThrow("Cannot divide with 0");
   })
+
+  test('0 / 1 equals to 0', () => {
+    expect(calculator.divide(0, 1)).toEqual(0);
+  })
 })
