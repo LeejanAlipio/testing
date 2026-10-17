@@ -1,9 +1,12 @@
 import { calculateShipping } from "./shipping.js";
 
 test('shipping cost 50 if weight is 0-5 kg', () => {
-  const weight = 5;
+  const fiveKg = 5;
+  const threeKg = 3;
 
-  const result = calculateShipping(weight);
+  const fiveKgResult = calculateShipping(fiveKg);
+  const threeKgResult = calculateShipping(threeKg);
 
-  expect(result).toBe(50);
+  expect(fiveKgResult).toBe(50);
+  expect(threeKgResult).toBe(50);
 })
