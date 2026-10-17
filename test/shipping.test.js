@@ -24,3 +24,11 @@ test('package weighing more than 5kg to 10kg costs 100', () => {
   expect(sixKgResult).toBe(100);
   expect(tenKgResult).toBe(100);
 })
+
+test('package weighing more than 10kg throws an error', () => {
+  const elevenKg = 11;
+
+  const elevenKgResult = calculateShipping(elevenKg);
+
+  expect(() => calculateShipping(elevenKgResult)).toThrow();
+})
