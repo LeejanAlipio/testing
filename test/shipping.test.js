@@ -13,3 +13,14 @@ test('shipping cost 50 if weight is 0-5 kg', () => {
   expect(threeKgResult).toBe(50);
   expect(zeroKgResult).toBe(50);
 })
+
+test('package weighing more than 5kg to 10kg costs 100', () => {
+  const sixKg = 6;
+  const tenKg = 10;
+
+  const sixKgResult = calculateShipping(sixKg);
+  const tenKgResult = calculateShipping(tenKg);
+
+  expect(sixKgResult).toBe(100);
+  expect(tenKgResult).toBe(100);
+})
