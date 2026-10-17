@@ -28,7 +28,7 @@ test('package weighing more than 5kg to 10kg costs 100', () => {
 test('package weighing more than 10kg throws an error', () => {
   const elevenKg = 11;
 
-  const elevenKgResult = calculateShipping(elevenKg);
+  const elevenKgResult = () => calculateShipping(elevenKg);
 
-  expect(() => calculateShipping(elevenKgResult)).toThrow();
+  expect(elevenKgResult).toThrow("Weight must not exceed 10kg");
 })
