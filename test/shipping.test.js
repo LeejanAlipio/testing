@@ -32,3 +32,7 @@ test('package weighing more than 10kg throws an error', () => {
 
   expect(elevenKgResult).toThrow("Weight must not exceed 10kg");
 })
+
+test('negative weights are invalid', () => {
+  expect(() => calculateShipping(-1)).toThrow("Weight must not be negative");
+})
